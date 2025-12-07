@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Car Price Prediction</title>
+    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src = "app.js"></script>
+    <link rel = "stylesheet" href="app.css">
+</head>
+
+<body>
+<div class = "img"></div>
+
+<form class = "form">
+    <h2>Manufacture Name</h2>
+    <div>
+        <select class="ManufactureName" name="" id="uiManufactureName">
+            <option value="" disabled="disabled" selected="selected">Choose a Manufacture Name</option>
+                <option>BWM</option>
+                <option>Tesla</option>
+        </select>
+    </div>
+
+    <h2>Production Year</h2>
+    <input class="productionyear" type="email" id="uiProductionYear" class="floatLabel" name="Mileage" value="2017"/>
+
+    <h2>Mileage</h2>
+    <input class="mileage" type="email" id="uiMileage" class="floatLabel" name="Mileage" value="85000"/>
+
+    <h2>Levy</h2>
+    <input class="levy" type="email" id="uiLevy" class="floatLabel" name="Mileage" value="500"/>
+
+    <h2>Doors</h2>
+    <div class = "switch-field">
+        <input type="radio" id="radio-doors-2" name="uiDoors" value="2"/>
+        <label for="radio-doors-2">2</label>
+
+        <input type="radio" id="radio-doors-4" name="uiDoors" value="4"/>
+        <label for="radio-doors-4">4</label>
+    </div>
+
+    <button class="submit" onclick="onClickedEstimatedPrice()" type="button">Estimate Price</button>
+    <div id="uiEstimatedPrice" class="result"> <h2></h2> </div>
+
+</form>
+
+
+</body>
+
+</html>
